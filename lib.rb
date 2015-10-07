@@ -11,7 +11,15 @@ module Euler
     true
   end
 
-  def primes(a)
-    a.select { |x| prime?(x) }
+  def primes(array)
+    array.select { |x| prime?(x) }
+  end
+
+  def sum_digits(n)
+    n.to_s.chars.map(&:to_i).inject(:+)
+  end
+
+  def factorial(n)
+    n.downto(2).inject(:*)
   end
 end
