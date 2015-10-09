@@ -6,6 +6,10 @@ module Euler
     end
   end
 
+  def proper_divisors(n)
+    factors(n) - [n]
+  end
+
   def prime?(n)
     (2..Math.sqrt(n)).each { |d| return false if n % d == 0 }
     true
