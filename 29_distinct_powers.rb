@@ -7,3 +7,4 @@ results = []
 end
 
 puts results.count
+puts "Travis sucks!"
